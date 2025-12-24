@@ -2,11 +2,11 @@
 
 A comprehensive implementation of unsupervised learning algorithms from scratch, including K-Means, GMM-EM, PCA, and Autoencoders, with extensive evaluation and comparative analysis.
 
-## 📋 Overview
+## Overview
 
 This project implements six experiments combining dimensionality reduction techniques (PCA, Autoencoder) with clustering algorithms (K-Means, GMM) on the Breast Cancer Wisconsin dataset. All core algorithms are implemented from scratch using NumPy, without relying on scikit-learn for the algorithmic components.
 
-## 🔧 Core Implementations (From Scratch)
+## Core Implementations (From Scratch)
 
 ### Clustering Algorithms
 - **K-Means**: K-Means++ initialization, random initialization, convergence tracking, inertia history
@@ -20,7 +20,7 @@ This project implements six experiments combining dimensionality reduction techn
 - **Internal Metrics**: Silhouette Score, Davies-Bouldin Index, Calinski-Harabasz Index, Inertia
 - **External Metrics**: Adjusted Rand Index (ARI), Normalized Mutual Information (NMI), Purity, Homogeneity, Completeness, V-measure
 
-## 📊 Experiments
+## Experiments
 
 | # | Configuration | Method | Notes |
 |---|---|---|---|
@@ -33,16 +33,7 @@ This project implements six experiments combining dimensionality reduction techn
 
 **Total Configurations Tested**: 60+
 
-## 📁 Project Structure
-
-```
-├── Kmeans.ipynb              # Experiments 1, 3, 5 with K-Means
-├── GmmAndEm.ipynb            # Experiments 2, 4, 6 with GMM
-├── PCA_&_Autoencoder.ipynb   # Dimensionality reduction implementations
-└── README.md                 # This file
-```
-
-## 📈 Key Features
+## Key Features
 
 ### Comprehensive Analysis Section (Kmeans.ipynb)
 - **Comparison Tables**: Best configurations from each experiment
@@ -58,7 +49,7 @@ This project implements six experiments combining dimensionality reduction techn
 - **Effect Size (Cohen's d)**: Magnitude of differences between methods
 - **Computational Complexity**: Runtime analysis and space complexity O() notation
 
-## 🎯 Dataset
+## Dataset
 
 **Breast Cancer Wisconsin Dataset**
 - Samples: 569
@@ -66,22 +57,12 @@ This project implements six experiments combining dimensionality reduction techn
 - Classes: 2 (Benign/Malignant)
 - Preprocessing: Standardization (mean=0, std=1)
 
-## 🚀 Usage
-
-### Run the Assignment
-```bash
-# Cell execution in Jupyter (recommended order)
-1. Kmeans.ipynb (5-10 minutes)
-2. GmmAndEm.ipynb (10-15 minutes)
-3. View results: tables printed, plots displayed inline
-```
-
 ### Key Results
 - **Best K-Means Config**: Original data with optimal k=2 (Silhouette: 0.68)
 - **Best PCA+K-Means**: 5D reduction with optimized k
 - **Best Autoencoder+K-Means**: Non-linear reduction with enhanced clustering
 
-## 📊 Visualizations
+## Visualizations
 
 - **30+ Distinct Plots** across both notebooks
 - 2D/3D scatter plots with cluster centroids
@@ -90,7 +71,7 @@ This project implements six experiments combining dimensionality reduction techn
 - Confusion matrices with accuracy metrics
 - Heatmap of normalized performance metrics
 
-## 🔍 Algorithm Details
+## Algorithm Details
 
 ### K-Means
 ```
@@ -117,60 +98,4 @@ Time Complexity: O(iterations*n*k*d)
 Space Complexity: O(n*k + k*d²)
 ```
 
-## 📋 Requirements
 
-- Python 3.8+
-- NumPy (linear algebra, numerical computing)
-- Pandas (data manipulation)
-- Matplotlib & Seaborn (visualization)
-- scikit-learn (only for metrics and dataset loading, not algorithms)
-- SciPy (statistical tests)
-
-## ✨ Highlights
-
-✅ **From-Scratch Implementations**: No scikit-learn for core algorithms
-✅ **Comprehensive Evaluation**: 10 different metrics across all methods
-✅ **Statistical Rigor**: Hypothesis testing with p-values and effect sizes
-✅ **Professional Presentation**: Clear documentation and visualizations
-✅ **Reproducible Results**: Fixed random seeds, detailed methodology
-✅ **Scalable Code**: Modular classes for easy extension
-
-## 📚 Learning Outcomes
-
-This project demonstrates:
-- Understanding of unsupervised learning fundamentals
-- Matrix decomposition and linear algebra (PCA via SVD)
-- Iterative clustering algorithms and convergence criteria
-- Probabilistic modeling (GMM-EM)
-- Deep learning fundamentals (Autoencoder architecture)
-- Evaluation metrics for clustering quality
-- Statistical hypothesis testing
-- Data visualization and comparative analysis
-
-## 🔬 Future Extensions
-
-- Implement hierarchical clustering, DBSCAN
-- Add t-SNE for 2D visualization
-- Extend to semi-supervised learning
-- Optimize with GPU acceleration
-- Create interactive parameter tuning dashboard
-
-## 📝 Assignment Information
-
-**Course**: Introduction to Machine Learning (Term 7)
-**Institution**: [Your Institution]
-**Due Date**: December 24, 2025
-**Status**: ✅ Complete & Verified
-
-## 👤 Author
-
-Omar Adel
-
-## 📄 License
-
-This project is part of an academic assignment. Please refer to your institution's academic integrity policy.
-
----
-
-**Last Updated**: December 24, 2025
-**Status**: Ready for Submission ✅
